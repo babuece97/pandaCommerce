@@ -7,13 +7,22 @@
  });
 
  // for review section
+    //1.add event handler
 document.getElementById('comment').addEventListener('click', function(){
     const commentBox=document.getElementById('feedback');
-    const userComment=commentBox.value;
+     //2. get user comment
+    //const userComment=commentBox.value;
+
+        // 3.Creat new comment paragraph
  
     const newComment=document.createElement('p');
-    newComment.innerText=userComment;
+    newComment.innerText=commentBox.value;
+
+        //4. append the comment
 
     const commentContainer=document.getElementById('comment-container');
     commentContainer.appendChild(newComment);
+
+        //5.empty the comment box
+        commentBox.value='';
 })
