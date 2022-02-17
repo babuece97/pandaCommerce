@@ -23,6 +23,6 @@ document.getElementById('comment').addEventListener('click', function(){
     const commentContainer=document.getElementById('comment-container');
     commentContainer.appendChild(newComment);
 
-        //5.empty the comment box
+        //5.empty the comment box for further use
         commentBox.value='';
 })
